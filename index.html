@@ -22,7 +22,7 @@ d3.csv("./2330.csv",
     var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.close*(height/maxy)});
     ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
 
-   
+}
 
 );
  
